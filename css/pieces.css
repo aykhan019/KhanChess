@@ -1,0 +1,100 @@
+/* :root {
+    --whitePawnURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432981/projects/chess-game/piece/cburnett/wP_re2euf.svg");
+    --whiteRookURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432981/projects/chess-game/piece/cburnett/wR_ryufrw.svg");
+    --whiteKnightURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432981/projects/chess-game/piece/cburnett/wN_w7mdgf.svg");
+    --whiteBishopURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432980/projects/chess-game/piece/cburnett/wB_lj6y0c.svg");
+    --whiteQueenURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432981/projects/chess-game/piece/cburnett/wQ_wvfdxx.svg");
+    --whiteKingURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432980/projects/chess-game/piece/cburnett/wK_vfd8wo.svg");
+
+    --blackPawnURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432980/projects/chess-game/piece/cburnett/bP_z4tfus.svg");
+    --blackRookURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432980/projects/chess-game/piece/cburnett/bR_v3y7hz.svg");
+    --blackKnightURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432980/projects/chess-game/piece/cburnett/bN_lqpbrp.svg");
+    --blackBishopURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432979/projects/chess-game/piece/cburnett/bB_jjo0ae.svg");
+    --blackQueenURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432980/projects/chess-game/piece/cburnett/bQ_uohf3d.svg");
+    --blackKingURL: url("https://res.cloudinary.com/dbriqxpaa/image/upload/v1680432979/projects/chess-game/piece/cburnett/bK_ta7dkr.svg");
+
+    --whitePawnURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/wP_vomlfu");
+    --whiteRookURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/wR_tc40si");
+    --whiteKnightURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/wN_degkjb");
+    --whiteBishopURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/wB_zldhpf");
+    --whiteQueenURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/wQ_oou8on");
+    --whiteKingURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/wK_wc9svn");
+
+    --blackPawnURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/bP_rmlktf");
+    --blackRookURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/bR_deem2j");
+    --blackKnightURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/bN_x9ods2");
+    --blackBishopURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/bB_kkrfvv");
+    --blackQueenURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/bQ_z2bxf8");
+    --blackKingURL: url("http://res.cloudinary.com/dbriqxpaa/image/upload/v1/projects/chess-game/piece/cardinal/bK_yoef59");
+}
+
+#piece {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-user-drag: element;
+}
+
+.white-pawn {
+    content: var(--whitePawnURL);
+}
+
+.white-rook {
+    content: var(--whiteRookURL);
+}
+
+.white-knight {
+    content: var(--whiteKnightURL);
+}
+
+.white-bishop {
+    content: var(--whiteBishopURL);
+}
+
+.white-queen {
+    content: var(--whiteQueenURL);
+}
+
+.white-king {
+    content: var(--whiteKingURL);
+}
+
+.black-pawn {
+    content: var(--blackPawnURL);
+}
+
+.black-rook {
+    content: var(--blackRookURL);
+}
+
+.black-knight {
+    content: var(--blackKnightURL);
+}
+
+.black-bishop {
+    content: var(--blackBishopURL);
+}
+
+.black-queen {
+    content: var(--blackQueenURL);
+}
+
+.black-king {
+    content: var(--blackKingURL);
+} */
+
+.piece {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+.piece:active{
+    cursor: alias;
+}
