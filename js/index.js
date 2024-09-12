@@ -7,4 +7,5 @@ addDragAndDropToPiece();
 generatePrecomputedMoves();
 let moves = getNewMoves();
 showBoardInConsole();
+changeBoardTheme(17);
 if (AI_vs_AI) removeAllEventListeners();

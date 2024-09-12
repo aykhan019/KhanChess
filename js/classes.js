@@ -179,7 +179,7 @@ class Piece {
 
 
         // Remove piece from old square and place it on new square
-        console.log("Move: " + oldSquare.id + " " + newSquare.id)
+        //console.log("Move: " + oldSquare.id + " " + newSquare.id)
 
         board.Squares[oldSquare.id] = new Piece(Piece.None, Piece.None);
         board.Squares[newSquare.id] = piece;
@@ -212,7 +212,7 @@ class Piece {
 
         // Update the FEN string
         board.fen = chess.fen();
-        console.log(chess.ascii());
+        //console.log(chess.ascii());
 
         // Update the board and move history
         updatePlayedMoves();
@@ -381,7 +381,7 @@ class Piece {
         //     throw new Error(`Invalid move notation: ${moveNotation}`);
         // }
 
-        console.log("Move NOTATION: " + moveNotation);
+        //console.log("Move NOTATION: " + moveNotation);
         return moveNotation;
     }
 
@@ -417,8 +417,8 @@ class Piece {
                 const piece = board.Squares[i];
                 if (piece.piece === Piece.Rook && piece.color === board.ColorToMove) {
                      const moves = generateSlidingMoves(i, piece)
-                        console.log("Sliding moves: ")
-                        console.log(moves)
+                        //console.log("Sliding moves: ")
+                        //console.log(moves)
                     
                     for (const m of moves) { // Correctly iterates over each Move object
                         if (m.targetSquare.toString().trim() === targetSquareId.toString().trim()
@@ -442,8 +442,8 @@ class Piece {
                 const piece = board.Squares[i];
                 if (piece.piece === Piece.Bishop && piece.color === board.ColorToMove) {
                      const moves = generateSlidingMoves(i, piece)
-                        console.log("Sliding moves: ")
-                        console.log(moves)
+                        //console.log("Sliding moves: ")
+                        //console.log(moves)
                     
                     for (const m of moves) { // Correctly iterates over each Move object
                         if (m.targetSquare.toString().trim() === targetSquareId.toString().trim()

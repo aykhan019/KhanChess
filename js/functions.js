@@ -523,12 +523,17 @@ async function sendRequest(url) {
 
 // Main function to choose the computer's move using Stockfish API
 async function chooseComputerMove() {
+    const thinkingText = document.getElementById("thinkingText");
+    thinkingText.style.display = "block"; // Show the thinking message
+
+    const yourTurn = document.getElementById("your-turn");
+    yourTurn.style.display = 'none';
     try {
         let myFen = board.fen; // Get current board position in FEN
-        console.log("Current FEN:", myFen);
+        //console.log("Current FEN:", myFen);
 
         // Build URL with FEN and depth (depth can be adjusted as needed)
-        let url = `${stockfishUrl}${encodeURIComponent(myFen)}&depth=7`;
+        let url = `${stockfishUrl}${encodeURIComponent(myFen)}&depth=12`;
 
         // Send request to Stockfish API to get the best move
         let data = await sendRequest(url);
@@ -546,7 +551,7 @@ async function chooseComputerMove() {
             let moveTarget = coordinateToIndex(targetSquare);
 
             move = new Move(moveStart, moveTarget)
-            console.log(move)
+            //console.log(move)
             // Return the best move as a Move object
             return move;
         } else {
@@ -559,6 +564,9 @@ async function chooseComputerMove() {
         moves = getNewMoves(); // Generate new possible moves for fallback
         const randomIndex = Math.floor(Math.random() * moves.length);
         return moves[randomIndex];
+    } finally{
+        thinkingText.style.display = "none"; // Hide the thinking message after the move is decided
+        yourTurn.style.display = 'block';
     }
 }
 
