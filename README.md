@@ -1,17 +1,17 @@
 # Chess Game
 
-This project is a browser-based **Chess Game** built using **JavaScript**, **HTML**, and **CSS**. It allows users to play chess against a basic AI or with another player locally. The game includes responsive design for various screen sizes and essential features like valid move detection.
+This project is a browser-based **Chess Game** built using **JavaScript**, **HTML**, and **CSS**. It allows users to play chess against Stockfish or with another player locally. The game includes responsive design for various screen sizes and essential features like valid move detection.
 
 ## Features
-- **Player vs AI**: The AI makes random moves.
+- **Player vs AI**: AI uses the Stockfish API to determine the best move.
 - **Player vs Player**: Local multiplayer mode.
-- **Valid Move Detection**: Ensures only legal moves are made.
-- **Responsive Design**: Adaptable to both mobile and desktop screens.
+- **Move Validation**: Ensures legal chess moves.
+- **Responsive Design**: Suitable for mobile and desktop.
 
 ## Getting Started
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/aykhan019/ChessGame.git
+   git clone https://github.com/aykhan019/KhanChess.git
    ```
 2. Open the `index.html` file in your browser.
 
@@ -21,12 +21,12 @@ This project is a browser-based **Chess Game** built using **JavaScript**, **HTM
 Click the image above to view the full project demonstration.
 
 ## Technologies Used
-- **JavaScript**: Handles game logic.
-- **HTML & CSS**: For structuring and styling the game interface.
-- **FontAwesome**: Icons for the chess pieces.
+- **JavaScript**: Game logic and API calls to Stockfish.
+- **HTML & CSS**: Interface and styling.
+- **Stockfish API**: Used for AI decision-making.
+- **FontAwesome**: Chess piece icons.
 
 ## Future Improvements
-- Implementing a more advanced AI with chess strategies.
 - Adding game timers and move history.
 - Online multiplayer functionality.
 
