@@ -16,7 +16,7 @@ This project is a browser-based **Chess Game** built using **JavaScript**, **HTM
 2. Open the `index.html` file in your browser.
 
 ## Video Demo
-[![Chess Game Demo](https://media.aykhan.net/thumbnails/projects/chess.png)](https://youtu.be/piR5hC6FGlA)
+[![Chess Game Demo](https://media.aykhan.net/thumbnails/projects/chess.png)](https://www.youtube.com/watch?v=piR5hC6FGlA)
 
 Click the image above to view the full project demonstration.
 
