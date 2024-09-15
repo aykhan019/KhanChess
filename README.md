@@ -30,6 +30,9 @@ Click the image above to view the full project demonstration.
 - Adding game timers and move history.
 - Online multiplayer functionality.
 
+## License
+This project is licensed under the [MIT License](LICENSE)
+
 ---
 
 Contributions are welcome! Feel free to open issues or submit pull requests to enhance the project.
